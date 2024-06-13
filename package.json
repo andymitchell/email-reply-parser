@@ -1,14 +1,18 @@
 {
-  "name": "email-reply-parser",
+  "name": "@andyrmitchell/email-reply-parser",
   "version": "1.6.0",
-  "description": "Node library for parsing plain text email content. Based on https://github.com/willdurand/EmailReplyParser",
+  "description": "Dependency-free library for parsing plain text email content. Forked from https://github.com/crisp-oss/email-reply-parser/blob/master/test/test.js (itself based on https://github.com/willdurand/EmailReplyParser)",
   "main": "lib/emailreplyparser.js",
-  "homepage": "https://github.com/crisp-oss/email-reply-parser",
+  "homepage": "https://github.com/andymitchell/email-reply-parser",
+  "type": "commonjs",
   "repository": {
     "type": "git",
-    "url": "git://github.com/crisp-oss/email-reply-parser.git"
+    "url": "git://github.com/andymitchell/email-reply-parser.git"
   },
   "scripts": {
+    "build_release": "npm run build_prepare && np",
+    "pkglint": "./build/publint_pipeable.sh",
+    "build_prepare": "npm run pkglint",
     "test": "node ./node_modules/nodeunit/bin/nodeunit test/test.js"
   },
   "engines": {
@@ -16,9 +20,6 @@
   },
   "author": "Crisp IM SAS",
   "license": "MIT",
-  "dependencies": {
-    "re2": "1.20.7"
-  },
   "devDependencies": {
     "nodeunit": "v0.11.3",
     "underscore": "v1.13.6"
