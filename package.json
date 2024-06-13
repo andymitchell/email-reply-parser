@@ -1,6 +1,6 @@
 {
   "name": "@andyrmitchell/email-reply-parser",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "description": "Dependency-free library for parsing plain text email content. Forked from https://github.com/crisp-oss/email-reply-parser/blob/master/test/test.js (itself based on https://github.com/willdurand/EmailReplyParser)",
   "main": "lib/emailreplyparser.js",
   "homepage": "https://github.com/andymitchell/email-reply-parser",
